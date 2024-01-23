@@ -48,7 +48,7 @@ export default function CustomAppBar() {
             {/* Menu Items */}
             <MenuItem onClick={handleMenuClose}>Chest</MenuItem>
             <MenuItem onClick={handleMenuClose}>Back</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Option 3</MenuItem>
+            <MenuItem onClick={handleMenuClose}>Legs</MenuItem>
             <MenuItem onClick={handleMenuClose}>Option 3</MenuItem>
             <MenuItem onClick={handleMenuClose}>Option 3</MenuItem>
           </Menu>
