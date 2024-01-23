@@ -49,7 +49,7 @@ export default function CustomAppBar() {
             <MenuItem onClick={handleMenuClose}>Chest</MenuItem>
             <MenuItem onClick={handleMenuClose}>Back</MenuItem>
             <MenuItem onClick={handleMenuClose}>Legs</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Option 3</MenuItem>
+            <MenuItem onClick={handleMenuClose}>Arms / Shoulders</MenuItem>
             <MenuItem onClick={handleMenuClose}>Option 3</MenuItem>
           </Menu>
         </Toolbar>
