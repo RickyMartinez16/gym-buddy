@@ -10,14 +10,14 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
 
 export default function CustomAppBar() {
-  const [menuAnchorEl, setMenuAnchorEl] = React.useState(null);
+  const [menuAnchorElement, setMenuAnchorElement] = React.useState(null);
 
   const handleMenuClick = (event) => {
-    setMenuAnchorEl(event.currentTarget);
+    setMenuAnchorElement(event.currentTarget);
   };
 
   const handleMenuClose = () => {
-    setMenuAnchorEl(null);
+    setMenuAnchorElement(null);
   };
 
   return (
@@ -41,8 +41,8 @@ export default function CustomAppBar() {
 
           {/* Menu Component */}
           <Menu
-            anchorEl={menuAnchorEl}
-            open={Boolean(menuAnchorEl)}
+            anchorEl={menuAnchorElement}
+            open={Boolean(menuAnchorElement)}
             onClose={handleMenuClose}
           >
             {/* Menu Items */}
