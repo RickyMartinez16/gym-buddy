@@ -8,6 +8,8 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
+import { Link } from "react-router-dom";
+
 
 export default function CustomAppBar() {
   const [menuAnchorElement, setMenuAnchorElement] = React.useState(null);
@@ -46,12 +48,13 @@ export default function CustomAppBar() {
             onClose={handleMenuClose}
           >
             {/* Menu Items */}
-            <MenuItem onClick={handleMenuClose}>Chest</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Back</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Legs</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Arms</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Shoulders</MenuItem>
-            <MenuItem onClick={handleMenuClose}>Core / Cardio</MenuItem>
+            <MenuItem component={Link} to={'/'}>Home</MenuItem>
+            <MenuItem component={Link} to={'/chest'}>Chest</MenuItem>
+            <MenuItem component={Link} to={'/back'}>Back</MenuItem>
+            <MenuItem component={Link} to={'/legs'}>Legs</MenuItem>
+            <MenuItem component={Link} to={'/arms'}>Arms</MenuItem>
+            <MenuItem component={Link} to={'/shoulders'}>Shoulders</MenuItem>
+            <MenuItem component={Link} to={'/core-cardio'}>Core / Cardio</MenuItem>
           </Menu>
         </Toolbar>
       </AppBar>
